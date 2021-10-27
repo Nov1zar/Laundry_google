@@ -1,0 +1,132 @@
+ <!-- <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div class="card-panel">
+          <span class="teal-text text-darken-2">
+            <!-- <i class="material-icons prefix">flash_on</i> -->
+            <h5><i class="small material-icons">local_shipping</i>Отгрузка вещей</h5></span>
+          <span class="text">Выбери кухню, и введи баркод данные подтянутся автоматически. 
+            После назначения кухни, нужно проставить галочки</span>
+        </div>
+        <div>
+        </div>
+      <div class="container">
+        <div class="row">
+          <div class="input-field col s12">
+            <select id="newlocation" class="active">
+                <option disabled selected></option>
+                <option>Большая Дмитровка</option>
+                <option>Кутузовская</option>
+                <option>Самотечный</option>
+                <option>Сити</option>
+                <option>Фрунзенская</option>
+                <option>Шмитовская</option>
+                <option>Северное бутово</option>
+                <option>Прачечная</option>
+                <option>Константинова</option>
+                <option>Ленинградка</option>
+                <option>Леонтьевская</option>
+                <option>Подсосенский</option>
+                <option>Международная</option>
+                <option>Люсиновская</option>
+                <option>Дубининская</option>
+                <option>Коломенская</option>
+                <option>Вернадского</option>
+                <option>Симферопольская</option>
+                <option>Свиблово</option>
+                <option>Бескудниковский</option>
+                <option>Окружная</option>
+                <option>Рублевка</option>
+                <option>Народного ополчения</option>
+                <option>Сущевка</option>
+                <option>Коптево</option>
+                <option>Бутырская</option>
+                <option>Бунинские луга</option>
+                <option>Осенняя</option>
+                <option>Ярославская</option>
+                <option>Красносельская</option>
+                <option>Иловайская</option>
+                <option>Стромынка</option>
+                <option>Обручева</option>
+                <option>Велозаводская</option>
+                <option>Пятницкая</option>
+                <option>Профсоюзная</option>
+                <option>Марьино</option>
+                <option>Митино</option>
+                <option>Римского-Корсакова</option>
+                <option>Жулебино</option>
+                <option>Авангардная</option>
+                <option>Варшавская</option>
+                <option>Доброслободская</option>
+                <option>Нагатинская</option>
+                <option>Ореховый</option>
+                <option>Докучаев</option>
+                <option>Панфилова</option>
+                <option>Орджоникидзе</option>
+                <option>Петровский</option>
+                <option>Измайлово</option>
+                <option>Богородское</option>
+                <option>Херсонская</option>
+                <option>Новогиреево</option>
+                <option>Щукинская</option>
+                <option>Бабушкинская</option>
+                <option>Нагорная</option>
+                <option>Кастанаевская</option>
+                <option>Базовская</option>
+              </select>
+              <label>Выбери кухню</label>
+            </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">view_headline</i>
+            <input type="text" id="bcdn" class="autocomplete">
+            <label for="bcdn">Баркод</label>
+          </div>
+            <div class="section">
+              <span class="grey-text"><p>__________________________________________</p></span>
+              <!-- <p>еуеукеуе</p> -->
+            </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">settings</i>
+            <input disabled id="stype" type="text" class="validate">
+            <label for="stype" class="active">Позиция в Таблице</label>
+          </div>
+
+
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">accessibility</i>
+            <input disabled id="size" type="text" class="validate">
+            <label for="size" class="active">Инфо о вещи</label>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">home</i>
+            <input disabled id="location" type="text" class="validate">
+            <label for="location" class="active">Местоположение</label>
+          </div>
+           
+          
+         
+          <div class="input-field col s18">
+            <button class="btn waves-effect waves-light" id = "butn">Назначить кухню
+              <i class="material-icons right">chevron_right</i>
+            </button>
+          </div>
+        </div> <!-- END row -->
+      </div> <!-- END container -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+    <?!= include("sendToKitchen-js"); ?>
+    </body>
+  </html>
+  
