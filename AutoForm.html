@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div class="card-panel">
+          <span class="teal-text text-darken-2">
+            <!-- <i class="material-icons prefix">flash_on</i> -->
+            <h5><i class="medium material-icons prefix">qr_code_scanner</i>Smart-приемка</h5></span>
+          <span class="text">Нажми на баркод и отсканируй этикетку, данные подтянутся автоматически. 
+            Если не получилось, введи данные вручную</span>
+        </div>
+        <div>
+        </div>
+      <div class="container">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">view_headline</i>
+            <input id="bcdn" type="text" class="validate">
+            <label for="bcdn" class="active">Баркод</label>
+          </div>
+            <div class="section">
+              <span class="grey-text"><p>__________________________________________</p></span>
+              <!-- <p>еуеукеуе</p> -->
+            </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">settings</i>
+            <input id="stype" type="text" class="validate">
+            <label for="stype" class="active">Тип Вещи</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">accessibility</i>
+            <input id="size" type="text" class="validate">
+            <label for="size" class="active">Размер</label>
+          </div>
+           <!-- <div class="input-field col s12">
+            <i class="material-icons prefix">settings</i>
+            <input disabled id="basePosition" type="text" class="validate">
+            <label for="basePosition" class="active">Позиция в Таблице</label>
+          </div> -->
+          </div>
+          <div class="input-field col s18">
+            <button class="btn waves-effect waves-light" id = "butn">Добавить в таблицу
+              <i class="material-icons right">chevron_right</i>
+            </button>
+          </div>
+        </div> <!-- END row -->
+      </div> <!-- END container -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+    <?!= include("newpage-js"); ?>
+    </body>
+  </html>
+        
