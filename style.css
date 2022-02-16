@@ -1,0 +1,36 @@
+<style>
+
+table {
+  text-align: left;
+  position: relative;
+}
+
+th {
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+tr:hover {
+  background-color: #ebebeb;
+}
+
+tr:hover td {
+  background-color: transparent;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: underline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+
+</style>
