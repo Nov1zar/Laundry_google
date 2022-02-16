@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <base target="_top">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+
+      
+      <div class="container">
+        <div class="row">
+          <div class="input-field col s12">
+            <h1>Dashboard</h1>
+          </div>
+
+            <div class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a class="active" href="#dashboard-cost">Дашборд в деньгах</a></li>
+                <li class="tab col s3"><a class="active" href="#dashboard">Дашборд в количестве</a></li>
+                <li class="tab col s3"><a class="active" href="#dashboardDaily">Движения экипировки</a></li>
+                <li class="tab col s3"><a class="active" href="#dashboardWrite_Off">Списания экипировки</a></li>
+              </ul>
+            </div>
+            </div>
+
+            
+                        <div id="dashboard-cost" class="col s12">
+                          <div class="row col s12">
+                          <table>
+                          <thead>
+                            <tr>
+                                <th>Локация</th>
+                                <th>Футболка</th>
+                                <th>Худи</th>
+                                <th>Дождевик</th>
+                                <th>Подкладка</th>
+                                <th>Термосумка</th>
+                                <th>Термосумка S</th>
+                                <th>Штаны</th>
+                                <th>Итого</th>
+                            </tr>
+
+                          </thead>
+                            <tbody id="main-cost-dashboard-body"></tbody>
+                          </table>
+                          </div>
+                          <table>
+                          <thead>
+                            <tr>
+                                <th>Локация</th>
+                                <th>Футболка</th>
+                                <th>Худи</th>
+                                <th>Дождевик</th>
+                                <th>Подкладка</th>
+                                <th>Термосумка</th>
+                                <th>Термосумка S</th>
+                                <th>Штаны</th>
+                                <th>Итого</th>
+                            </tr>
+
+                          </thead>
+                            <tbody id="dashboard-cost-body"></tbody>
+                          </table>
+                        </div>
+
+
+                        <div id="dashboard" class="col s12">
+                            <div class="row col s12">
+                            <table>
+                            <thead>
+                              <tr>
+                                  <th>Локация</th>
+                                  <th>Футболка</th>
+                                  <th>Худи</th>
+                                  <th>Дождевик</th>
+                                  <th>Подкладка</th>
+                                  <th>Термосумка</th>
+                                  <th>Термосумка S</th>
+                                  <th>Штаны</th>
+                              </tr>
+
+                            </thead>
+                              <tbody id="main-dashboard-body"></tbody>
+                            </table>
+                            </div>
+                          <table>
+                          <thead>
+                            <tr class="Number">
+                                <th>Локация</th>
+                                <th>Футболка</th>
+                                <th>Худи</th>
+                                <th>Дождевик</th>
+                                <th>Подкладка</th>
+                                <th>Термосумка</th>
+                                <th>Термосумка S</th>
+                                <th>Штаны</th>
+                            </tr>
+                          </thead>
+                            <tbody id="dashboard-body"></tbody>
+                          </table>
+                        </div>
+              
+
+                        <div id="dashboardDaily" class="col s18">
+                            <div class="input-field col s3">
+                              <i class="material-icons prefix">date_range</i>
+                              <input id="datepicker" type="text" class="datepicker">
+                              
+                              
+                            </div>
+                            <button class="btn waves-effect waves-light" id = "butn">Применить
+                              <i class="material-icons right">chevron_right</i>
+                            </button>
+                          <table class="highlight">
+                          <thead>
+                            <tr>
+                                <th>Вещь\Размер</th>
+                                <th>Добавили через ручную приемку</th>
+                                <th>Добавили через smart приемку</th>
+                                <th>Отправили вещь на кухню</th>
+                                <th>Вернули на прачечную</th>
+                            </tr>
+                          </thead>
+
+                            <tbody id="dashboard-daily-body">
+
+                            </tbody>
+                          </table>
+                        </div>
+                        
+                        <div id="dashboardWrite_Off" class="col s12">
+                            <div class="row col s12">
+                            <table class="highlight">
+                            <thead>
+                              <tr>
+                                  <th>Тип вещи</th>
+                                  <th>Количество</th>
+                                  <th>Сумма списаний</th>
+                              </tr>
+                            </thead>
+                              <tbody id="write_off-dashboard-body"></tbody>
+                            </table>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+            
+          </div> <!-- END row --> 
+        </div> <!-- END container -->
+      
+
+   
+
+
+            
+ 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <?!= include("homepage_js"); ?>
+    <!-- <?!= include("sidenav_js"); ?> -->
+    <?!= include("tabs_js"); ?>
+    <?!= include("dashboard_js"); ?>
+    <?!= include("dailyDashboard_js"); ?>
+    <?!= include("CostMainDashboard_js"); ?>
+    <?!= include("MainDashboard_js"); ?>
+    <?!= include("datepicker_js"); ?>
+    <?!= include("main_css"); ?>
+    <?!= include("Write_off_Dashboard_js"); ?>
+
+    </body>
+  </html>
+  
