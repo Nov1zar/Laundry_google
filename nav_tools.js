@@ -15,9 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   });
+</script>
 
-    
-
+<script>
+  const todayDate = new Date(Date.now()).toLocaleString("ru-RU").split(',')[0]
   
-
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.getElementById("datepicker");    
+    var instances = M.Datepicker.init(elems,{format: 'dd.mm.yyyy', autoClose: true});
+    elems.defaultValue = todayDate
+    
+  });
 </script>
